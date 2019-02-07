@@ -1,0 +1,21 @@
+{
+    "name": "iot-playing",
+    "version": "1.0.0",
+    "scripts": {
+        "build": "lerna run build",
+        "clean": "rimraf packages/**/dist",
+        "diff": "lerna diff",
+        "newversion": "lerna version --conventional-commits --yes"
+    },
+    "main": "index.js",
+    "repository": "git@github.com:dolphub/iot-playing.git",
+    "author": "dolphub <randy.mikkelsaar@gmail.com>",
+    "license": "MIT",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "dependencies": {
+        "lerna": "^3.10.7"
+    }
+}
