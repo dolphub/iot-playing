@@ -1,0 +1,15 @@
+{
+    "name": "SendMessagesToDevice",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Randy Mikkelsaar <randy.mikkelsaar@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "start": "node src/index.js"
+    },
+    "dependencies": {
+        "azure-iot-common": "^1.4.1",
+        "azure-iothub": "^1.2.5",
+        "dotenv": "^5.0.1"
+    }
+}

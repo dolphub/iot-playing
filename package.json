@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "scripts": {
         "build": "lerna run build",
-        "clean": "rimraf packages/**/dist",
+        "clean": "rimraf modules/**/dist",
         "diff": "lerna diff",
         "newversion": "lerna version --conventional-commits --yes"
     },
@@ -13,7 +13,7 @@
     "license": "MIT",
     "private": true,
     "workspaces": [
-        "packages/*"
+        "modules/*"
     ],
     "dependencies": {
         "lerna": "^3.10.7"

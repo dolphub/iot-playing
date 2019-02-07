@@ -1,0 +1,21 @@
+{
+    "defaultSeverity": "error",
+    "extends": "tslint:latest",
+    "jsRules": {},
+    "rules": {
+        "max-line-length": {
+            "options": [140]
+        },
+        "quotemark": [true, "single", "jsx-double"],
+        "no-console": false,
+        "arrow-parens": false,
+        "ordered-imports": false,
+        "object-literal-sort-keys": false,
+    },
+    "rulesDirectory": [],
+    "linterOptions": {
+        "exclude": [
+            "node_modules"
+        ]
+    }
+}

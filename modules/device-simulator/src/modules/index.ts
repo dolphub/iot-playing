@@ -1,0 +1,1 @@
+export { RecordTelemetry, IRecordTelemetry } from './recordTelemetry';

@@ -1,0 +1,23 @@
+# Set the base image to Ubuntu
+FROM ckingdev/alpine-arm-node
+
+# Install nodemon
+RUN npm install -g nodemon
+
+# Copy npm package
+ADD package.json /tmp/package.json
+
+RUN cd /tmp && npm install
+RUN mkdir -p /server \
+    && cp -a /tmp/node_modules /server/
+
+RUN mkdir -p /server
+ADD . /server/
+
+# Define working directory
+WORKDIR /server
+
+EXPOSE 80
+
+# Run app using nodemon
+CMD ["nodemon", "src/index.js"]

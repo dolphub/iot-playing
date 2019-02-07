@@ -1,0 +1,14 @@
+{
+    "name": "IotHubExample",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Randy Mikkelsaar <randy.mikkelsaar@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "start": "node src/index.js"
+    },
+    "dependencies": {
+        "azure-event-hubs": "^0.0.8",
+        "dotenv": "^5.0.1"
+    }
+}

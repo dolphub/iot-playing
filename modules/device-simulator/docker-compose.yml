@@ -1,0 +1,11 @@
+version: '3'
+services:
+  device-simulator:
+    build:
+        context: .
+        dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    environment:
+      - IOT_MESSAGE_INTERVAL_MS=3000
+      - IOTHUB_CONNECTION_STRING=HostName=dolphub.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=xCI+J3+9sDkMGEuz+N5y2aDcNuJkE6Bek4WukexCX/k=
